@@ -146,7 +146,7 @@ keyFunc_home(){
 
 
 keyFunc_deleteLine(){
-    SendInput,{End}+{home}{bs}
+    SendInput,{End}+{home}{bs}^{End}^{home}
     Return
 }
 
