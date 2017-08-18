@@ -228,6 +228,14 @@ keyFunc_pageDown(){
     Return
 }
 
+keyFunc_scrollDown() {
+    SendInput, {WheelDown 1}
+}
+
+keyFunc_scrollUp() {
+    SendInput, {WheelUp 1}
+}
+
 ;页面向上移动一页，光标不动
 keyFunc_pageMoveUp(){
     SendInput, ^{PgUp}
