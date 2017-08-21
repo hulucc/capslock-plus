@@ -10,12 +10,6 @@
 /.vscode
 /wb/node_modules
 # ignore files
-CapsLock+hotString.ini
-CapsLock+winsInfo.ini
-CapsLock+settings.ini
-CapsLock+winsInfosRecorder.ini
-youdaoApiKey.ahk
-gain.md
 
 # Windows image file caches
 Thumbs.db
