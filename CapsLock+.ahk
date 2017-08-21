@@ -68,13 +68,16 @@ start:
 ;-----------------START-----------------
 global ctrlZ, CapsLock2, CapsLock
 
+^Capslock::
+SetCapsLockState, % GetKeyState("CapsLock","T") ? "Off" : "On"
+
 Capslock::
 ;ctrlZ:     Capslock+Z undo / redo flag
 ;Capslock:  Capslock 键状态标记，按下是1，松开是0
 ;Capslock2: 是否使用过 Capslock+ 功能标记，使用过会清除这个变量
 ctrlZ:=CapsLock2:=CapsLock:=1
 
-SetTimer, setCapsLock2, -300 ; 300ms 犹豫操作时间
+SetTimer, setCapsLock2, -1 ; 300ms 犹豫操作时间
 
 settimer, changeMouseSpeed, 50 ;暂时修改鼠标速度
 
