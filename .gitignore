@@ -10,6 +10,7 @@
 /.vscode
 /wb/node_modules
 # ignore files
+CapsLock+winsInfosRecorder.ini
 
 # Windows image file caches
 Thumbs.db
